@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi dan Keluarga</title>
+
+    <style>
+        body {
+            background-color: #9b765e;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+
+        .container {
+            background-color: #c5e1f5;
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        .foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .foto-keluarga {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #9b765e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .tombol {
+            text-align: center;
+        }
+
+        .halaman {
+            display: none;
+        }
+
+        .halaman.aktif {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HALAMAN PROFIL PRIBADI -->
+    <div class="container halaman aktif" id="profil-saya">
+
+        <h1>PROFIL PRIBADI</h1>
+
+        <!-- FOTO PRIBADI -->
+        <img src="c:\Users\Livia Lutfiana\Downloads\foto pribadi.jpeg" alt="Foto Livia Lutfiana" class="foto">
+
+        <h2>Livia Lutfiana</h2>
+
+        <p style="text-align: center;">
+            Mahasiswa Sistem Informasi<br>
+            Universitas Kuningan
+        </p>
+
+        <h3>Tentang Saya</h3>
+
+        <p>
+            Perkenalkan, nama saya Livia Lutfiana. Saya merupakan
+            mahasiswa Program Studi Sistem Informasi di Universitas
+            Kuningan. Saya memiliki ketertarikan untuk mempelajari
+            hal-hal baru, terutama yang berhubungan dengan teknologi.
+        </p>
+
+        <p>
+            Saya termasuk orang yang awalnya cukup pendiam dan
+            kurang percaya diri ketika bertemu dengan lingkungan
+            baru. Namun, saya berusaha untuk keluar dari zona
+            nyaman dengan mengikuti berbagai kegiatan dan organisasi.
+        </p>
+
+        <p>
+            Dari pengalaman tersebut, saya belajar untuk lebih
+            berani berkomunikasi, bekerja sama, dan mencoba
+            berbagai hal baru.
+        </p>
+
+        <h3>Data Diri</h3>
+
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>Livia Lutfiana</td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td>Sistem Informasi</td>
+            </tr>
+            <tr>
+                <td>Universitas</td>
+                <td>Universitas Kuningan</td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>Mempelajari hal baru</td>
+            </tr>
+        </table>
+
+        <h3>Pengalaman</h3>
+
+        <p>
+            Saat SMP, saya pernah mengikuti ekstrakurikuler PMR.
+            Awalnya saya merasa malu dan bingung untuk memulai
+            percakapan dengan orang lain. Namun, melalui kegiatan
+            tersebut saya mulai mendapatkan teman dan belajar
+            berinteraksi dengan lingkungan baru.
+        </p>
+
+        <p>
+            Ketika SMA, saya juga mengikuti IT Club karena ingin
+            mencoba hal baru di bidang teknologi. Dari pengalaman
+            tersebut, saya belajar bahwa mencoba kegiatan baru
+            dapat menambah pengetahuan, pengalaman, dan rasa percaya diri.
+        </p>
+
+        <h3>Kontak</h3>
+
+        <p>Email: livia@example.com</p>
+
+        <div class="tombol">
+            <button onclick="pindahHalaman('profil-keluarga')">
+                Lihat Profil Keluarga
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- HALAMAN PROFIL KELUARGA -->
+    <div class="container halaman" id="profil-keluarga">
+
+        <h1>PROFIL KELUARGA</h1>
+
+        <!-- FOTO KELUARGA -->
+        <img src="c:\Users\Livia Lutfiana\Downloads\foto keluarga.jpeg" class="foto-keluarga">
+
+        <h3>Data Keluarga</h3>
+
+        <table>
+            <tr>
+                <td>Nama Ayah</td>
+                <td>Marjuki</td>
+            </tr>
+            <tr>
+                <td>Nama Ibu</td>
+                <td>Juju Jumiati</td>
+            </tr>
+            <tr>
+                <td>Jumlah Saudara</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Garawangi, Kuningan, Jawa Barat, RT 02 RW 01</td>
+            </tr>
+        </table>
+
+        <h3>Tentang Keluarga</h3>
+
+        <p>
+            Keluarga saya terdiri dari orang-orang yang selalu
+            memberikan dukungan dan perhatian dalam kehidupan saya.
+            Mereka mengajarkan saya untuk saling menghargai,
+            menghormati, dan menyayangi satu sama lain.
+        </p>
+
+        <p>
+            Bagi saya, keluarga adalah tempat untuk berbagi cerita,
+            belajar, dan mendapatkan semangat dalam menjalani
+            kehidupan. Saya bersyukur memiliki keluarga yang selalu
+            menjadi bagian penting dalam perjalanan hidup saya.
+        </p>
+
+        <div class="tombol">
+            <button onclick="pindahHalaman('profil-saya')">
+                Kembali ke Profil Pribadi
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT UNTUK PINDAH HALAMAN -->
+    <script>
+        function pindahHalaman(idHalaman) {
+
+            document.getElementById("profil-saya").classList.remove("aktif");
+            document.getElementById("profil-keluarga").classList.remove("aktif");
+
+            document.getElementById(idHalaman).classList.add("aktif");
+
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>
